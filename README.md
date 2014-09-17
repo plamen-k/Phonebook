@@ -52,16 +52,18 @@ Empty directory
 <i>The output is taken from TestMore.java</i>
 <h2>Additional benchmarks<h2>
 <p>
-The program comes with test classes: TestArray.java, TestHash.java and TestLinked.java where
-further tests have been done such as deleting 1000 random numbers, 1000 random names, inserting
-in the middle, end, beginning, looking up random people and so on.Performing operations on different length of text files:
+The program comes with test classes: 
+TestArray.java, TestHash.java and TestLinked.java 
+where further tests have been done such as deleting 1000 random numbers, 1000 random names, inserting
+in the middle, end, beginning, looking up random people and so on.Performing operations on different length of text files: <br/>
 3 different implementations of the directory work without a problem with the GUI, just change the
 structure type. Loading directory performs as expected and the GUI outputs to the user if anything
 goes wrong.
 The program performs as expected with a file with 10 entries, 5000 entries and 55000 entries.
 </p>
-Timing results
+<i>Timing results</i><br/>
 Array directory:
+<pre>
 52 730 133 after reading 2 000 entries from file
 200 839 424 after inserting 1 000 entries
 45 673 357 after deleting random 1000 names that exist
@@ -73,10 +75,12 @@ Array directory:
 102 164 after first lookup (depends on the implementation)
 6 970 475 after changing the numbers of the first 1000 people
 9 232 076 after changing the numbers of the last 1000 people
-======== Performance Report
-=======
+</p>
+
+<h2>Performance report</h2>
+<pre>
 409 590 723
-List directory:48 048 785 after reading 2 000 entries from file
+<b>List directory</b>:48 048 785 after reading 2 000 entries from file
 61 268 056 after inserting 1 000 entries
 112 921 969 after deleting random 1000 names that exist
 12 787 289 after deleting 1000 by number
@@ -87,6 +91,7 @@ List directory:48 048 785 after reading 2 000 entries from file
 695 554 after first lookup (depends on the implementation)
 20 052 8733 after changing the numbers of the first 1000 people
 97 731 260 after changing the numbers of the last 1000 people
+</h2>
 ======== Performance Report
 =======
 657 803 904
