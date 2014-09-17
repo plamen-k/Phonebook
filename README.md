@@ -30,7 +30,7 @@ System.out.println(directory.printDirectory());
 ```
 
 Output:
-
+<pre>
 false expected false, deleting by num empty dir
 false expected false, deleting by name in empty dir
 false expected false, change num in empty dir
@@ -47,7 +47,7 @@ Johnson MJ
 true expected true, delete by number
 true expected true, deleting last entry by surname
 Empty directory
-
+</pre>
 <br/>
 <i>The output is taken from TestMore.java</i>
 <h2>Additional benchmarks<h2>
