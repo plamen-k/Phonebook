@@ -10,7 +10,7 @@ Performing operations on an empty directory from all the directory
 implementations
 </p>
 Code:
-<div>
+<code>
 System.out.println(directory.deleteEntry(1) + " expected false, deleting by num empty dir");
 System.out.println(directory.deleteEntry("Mike") + " expected false, deleting by name in
 empty dir");
@@ -34,8 +34,10 @@ System.out.println(directory.deleteEntry("Johnson") +
 " expected true, deleting last
 entry by surname");
 System.out.println(directory.printDirectory());
-</div>
+</code>
+
 Output:
+<output>
 false expected false, deleting by num empty dir
 false expected false, deleting by name in empty dir
 false expected false, change num in empty dir
@@ -52,7 +54,8 @@ Johnson MJ
 true expected true, delete by number
 true expected true, deleting last entry by surname
 Empty directory
-The output is taken from TestMore.java
+</output>
+<i>The output is taken from TestMore.java</i>
 Additional benchmarks
 The program comes with test classes: TestArray.java, TestHash.java and TestLinked.java where
 further tests have been done such as deleting 1000 random numbers, 1000 random names, inserting
