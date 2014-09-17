@@ -114,8 +114,11 @@ Overall - 251 151 210
 </pre>
 <i>The time is in nanoseconds.</i>
 
+<h1>Performance overview</h1>
+<p>
 Reading from file is relatively slow because of the read speed. The list directory has higher
 performance, because it inserts instantly, whereas the array has to resize before add is performed.
+
 When inserting 1000 entries, hash and linked list implementations are significantly more efficient
 due to the nature of the data structure (instant addition without resizing). Hash directory is slightly
 faster because it performs hashing.
@@ -126,9 +129,11 @@ linked directory performs poorly because if there is a miss, it has to iterate t
 directory due to the structure of the implementation.
 Deleting 1000 by number is very inefficient in all implementations, because finding happens by brute
 force.
+
 Hash directory is very efficient when deleting by surname. Worst case scenario it is 26 times faster. It
 is still considerably faster in comparison to array directory despite its usage of binary search. The
 array directory lacks the speed because it has to resize every time when an entry is deleted.
 The same characteristics can be observed with the rest of the methods where finding certain
 information is very slow when performed by linked directory. The hash directory is often the fastest
 way to handle the tasks where in certain corner cases array directory performs better.
+</p>
