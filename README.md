@@ -2,7 +2,11 @@
 <p>
 This is a phone directory program written in Java for educational purpouses. The aim is to observe the differences between multiple implementations and the performance vs implementation that arises.
 </p>
-
+<h1>How to run ?</h1>
+<p>
+  Either import the folder in eclipse or execute the jar file [phonebook_gui.jar] by right clicking. 
+  !!! Make sure the file has execution permission !!!
+</p>
 <h1>Testing and performance</h1>
 <p>
 Benchmarking on various sizes of the text files
