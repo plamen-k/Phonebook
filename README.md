@@ -9,35 +9,28 @@ Benchmarking on various sizes of the text files
 Performing operations on an empty directory from all the directory
 implementations
 </p>
-Code:
-<code>
+Code: <br/>
+'''
 System.out.println(directory.deleteEntry(1) + " expected false, deleting by num empty dir");
 System.out.println(directory.deleteEntry("Mike") + " expected false, deleting by name in
 empty dir");
 System.out.println(directory.changeNumber("Mike", 5) + " expected false, change num in empty
 dir");
-System.out.println(directory.lookup("asd")
-+ " expected -1 (eg not found), empty dir");
-System.out.println(directory.insertEntry("Johnson", "MS", 1234) + " expected false-Initial
-not matching surname");
-System.out.println(directory.insertEntry("Johnson", "MJ", 12344)+ " expected false-More than
-4 digits");
-System.out.println(directory.insertEntry("Johnson", "MJ", 1244) + " expected true" + " after
-inserting ");
-System.out.println(directory.insertEntry("Johnson", "MJ", 1244) + " expected true" + " after
-inserting");
+System.out.println(directory.lookup("asd") + " expected -1 (eg not found), empty dir");
+System.out.println(directory.insertEntry("Johnson", "MS", 1234) + " expected false-Initial not matching surname");
+System.out.println(directory.insertEntry("Johnson", "MJ", 12344)+ " expected false-More than 4 digits");
+System.out.println(directory.insertEntry("Johnson", "MJ", 1244) + " expected true" + " after inserting ");
+System.out.println(directory.insertEntry("Johnson", "MJ", 1244) + " expected true" + " after inserting");
 System.out.println();
 System.out.println("Print directory");
 System.out.println(directory.printDirectory());
 System.out.println(directory.deleteEntry(1244)+ " expected true, delete by number");
-System.out.println(directory.deleteEntry("Johnson") +
-" expected true, deleting last
-entry by surname");
+System.out.println(directory.deleteEntry("Johnson") + " expected true, deleting last entry by surname");
 System.out.println(directory.printDirectory());
-</code>
+'''
 
 Output:
-<output>
+
 false expected false, deleting by num empty dir
 false expected false, deleting by name in empty dir
 false expected false, change num in empty dir
@@ -54,9 +47,11 @@ Johnson MJ
 true expected true, delete by number
 true expected true, deleting last entry by surname
 Empty directory
-</output>
+
+<br/>
 <i>The output is taken from TestMore.java</i>
-Additional benchmarks
+<h2>Additional benchmarks<h2>
+<p>
 The program comes with test classes: TestArray.java, TestHash.java and TestLinked.java where
 further tests have been done such as deleting 1000 random numbers, 1000 random names, inserting
 in the middle, end, beginning, looking up random people and so on.Performing operations on different length of text files:
@@ -64,6 +59,7 @@ in the middle, end, beginning, looking up random people and so on.Performing ope
 structure type. Loading directory performs as expected and the GUI outputs to the user if anything
 goes wrong.
 The program performs as expected with a file with 10 entries, 5000 entries and 55000 entries.
+</p>
 Timing results
 Array directory:
 52 730 133 after reading 2 000 entries from file
