@@ -62,8 +62,9 @@ goes wrong.
 The program performs as expected with a file with 10 entries, 5000 entries and 55000 entries.
 </p>
 <i>Timing results</i><br/>
-Array directory:
+
 <pre>
+<b>Array directory:</b>
 52 730 133 after reading 2 000 entries from file
 200 839 424 after inserting 1 000 entries
 45 673 357 after deleting random 1000 names that exist
@@ -75,11 +76,11 @@ Array directory:
 102 164 after first lookup (depends on the implementation)
 6 970 475 after changing the numbers of the first 1000 people
 9 232 076 after changing the numbers of the last 1000 people
-</p>
 
-<h2>Performance report</h2>
+Overall - 409 590 723
+</pre>
+
 <pre>
-409 590 723
 <b>List directory</b>:48 048 785 after reading 2 000 entries from file
 61 268 056 after inserting 1 000 entries
 112 921 969 after deleting random 1000 names that exist
@@ -91,11 +92,12 @@ Array directory:
 695 554 after first lookup (depends on the implementation)
 20 052 8733 after changing the numbers of the first 1000 people
 97 731 260 after changing the numbers of the last 1000 people
-</h2>
-======== Performance Report
-=======
-657 803 904
-Hash directory:
+
+Overall - 657 803 904
+</pre>
+
+<pre>
+<b>Hash directory:</b>
 61 971 540 after reading 2 000 entries from file
 52 959 652 after inserting 1 000 entries
 66 033 841 after deleting random 1000 names that exist
@@ -107,10 +109,11 @@ Hash directory:
 98 899 after first lookup (depends on the implementation)
 658 701 after changing the numbers of the first 1000 people
 11 189 986 after changing the numbers of the last 1000 people
-======== Performance Report
-=======
-251 151 210
-The time is in nanoseconds.
+
+Overall - 251 151 210
+</pre>
+<i>The time is in nanoseconds.</i>
+
 Reading from file is relatively slow because of the read speed. The list directory has higher
 performance, because it inserts instantly, whereas the array has to resize before add is performed.
 When inserting 1000 entries, hash and linked list implementations are significantly more efficient
