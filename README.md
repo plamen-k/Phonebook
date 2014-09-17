@@ -4,8 +4,9 @@ This is a phone directory program written in Java for educational purpouses. The
 </p>
 <h1>How to run ?</h1>
 <p>
-  Either import the folder in eclipse or execute the jar file [phonebook_gui.jar] by right clicking. 
-  !!! Make sure the file has execution permission !!!
+  Either import the folder in eclipse or execute the jar file [phonebook_gui.jar] by right clicking.<br/> 
+  !!! Make sure the file has execution permission !!!<br/>
+  If you want some dummy data, you can load "10.txt" or "phonebook.txt".
 </p>
 <h1>Testing and performance</h1>
 <p>
