@@ -10,7 +10,7 @@ Performing operations on an empty directory from all the directory
 implementations
 </p>
 Code: <br/>
-'''
+``` java
 System.out.println(directory.deleteEntry(1) + " expected false, deleting by num empty dir");
 System.out.println(directory.deleteEntry("Mike") + " expected false, deleting by name in
 empty dir");
@@ -27,7 +27,7 @@ System.out.println(directory.printDirectory());
 System.out.println(directory.deleteEntry(1244)+ " expected true, delete by number");
 System.out.println(directory.deleteEntry("Johnson") + " expected true, deleting last entry by surname");
 System.out.println(directory.printDirectory());
-'''
+```
 
 Output:
 
