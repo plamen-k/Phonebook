@@ -1,11 +1,16 @@
-<style type="text/css">h1{color:red;}</style>
 <h1>What is it ?</h1>
-For testing my phonebook program I chose using few different methods. Testing was done as
-following:
+<p>
+This is a phone directory program written in Java for educational purpouses. The aim is to observe the differences between multiple implementations and the performance vs implementation that arises.
+</p>
+
+<h1>Testing and performance</h1>
+<p>
 Benchmarking on various sizes of the text files
 Performing operations on an empty directory from all the directory
 implementations
+</p>
 Code:
+<div>
 System.out.println(directory.deleteEntry(1) + " expected false, deleting by num empty dir");
 System.out.println(directory.deleteEntry("Mike") + " expected false, deleting by name in
 empty dir");
@@ -29,6 +34,7 @@ System.out.println(directory.deleteEntry("Johnson") +
 " expected true, deleting last
 entry by surname");
 System.out.println(directory.printDirectory());
+</div>
 Output:
 false expected false, deleting by num empty dir
 false expected false, deleting by name in empty dir
