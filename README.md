@@ -1,4 +1,5 @@
 <h1>What is it ?</h1>
+<img src="https://pkolev.files.wordpress.com/2014/04/untitled-1.png?w=615&h=464" alt="Concept screenshot" />
 <p>
 This is a phone directory program written in Java for educational purpouses. The aim is to observe the differences between multiple implementations and the performance vs implementation that arises.
 </p>
